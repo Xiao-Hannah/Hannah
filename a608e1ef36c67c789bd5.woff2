@@ -1,0 +1,1 @@
+export default __webpack_public_path__ + "fonts/fira-sans-v17-latin-regular.woff2";
