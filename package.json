@@ -36,10 +36,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "url": "git+https://github.com/Wu-Bowen/Hannah.git"
-  },
   "author": "Eric",
-  "homepage": "http://Wu-Bowen.github.io/Hannah",
+  "homepage": "http://Hannah.github.io",
   "license": "ISC"
 }
