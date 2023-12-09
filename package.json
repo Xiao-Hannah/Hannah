@@ -36,7 +36,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "url": "git+https://github.com/Xiao-Hannah/Hannah"
+  },
   "author": "Eric",
-  "homepage": "http://Hannah.github.io",
+  "homepage": "http://Xiao-Hannah.github.io/Hannah",
   "license": "ISC"
 }
