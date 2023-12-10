@@ -18,14 +18,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|pdf)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-            },
-          },
-        ],
+        type: "asset/resource"
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -35,8 +28,8 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "dist/",
     filename: "bundle.js",
   },
   devServer: {
