@@ -17,10 +17,6 @@ module.exports = {
         use: ["style-loader", "css-loader", "less-loader"],
       },
       {
-<<<<<<< HEAD
-        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/,
-        type: "asset/resource"
-=======
         test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [
           {
@@ -41,7 +37,6 @@ module.exports = {
             },
           },
         ],
->>>>>>> 621716a139ea01dfe864756e44338ea955bb3762
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -54,13 +49,8 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
   output: {
-<<<<<<< HEAD
-    path: path.resolve(__dirname, "./dist"),
-    publicPath: "dist/",
-=======
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/",
->>>>>>> 621716a139ea01dfe864756e44338ea955bb3762
     filename: "bundle.js",
   },
   devServer: {
