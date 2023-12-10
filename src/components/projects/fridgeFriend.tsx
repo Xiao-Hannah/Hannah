@@ -1,6 +1,11 @@
 import React from "react";
 import "./fridgeFriend.less";
 import "./tablecontent.less";
+import lowFi1 from "./../../assets/images/fridgeFriend/low-fi_1.png";
+import compost1 from "./../../assets/images/fridgeFriend/compost1.png";
+import compost2 from "./../../assets/images/fridgeFriend/compost2.png";
+import lowFi2 from "./../../assets/images/fridgeFriend/low-fi_2.png";
+import { Element, Link } from "react-scroll";
 
 export const FridgeFriend = () => {
   return (
@@ -54,39 +59,97 @@ export const FridgeFriend = () => {
       </div>
       <div className="table-content-container">
         <div className="table-content">
-          <div>
+          <Link
+            className="table-content-item"
+            to="solution"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Solution </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="process"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Process </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="ideation"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Ideation </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="evaulation"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Evaulation </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="iteration"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Iteration </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="prototype"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Prototype </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="response"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Business Response </h3>
-          </div>
-          <div>
+          </Link>
+          <Link
+            className="table-content-item"
+            to="retrospective"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-100}
+          >
             <h3> Retrospective </h3>
-          </div>
+          </Link>
         </div>
         <div className="table-content-text">
           <div className="fridgeFriend-body">
-            <h3 className="fridgeFriend-body-title"> Solution </h3>
+            <Element name="solution">
+              <h3 className="fridgeFriend-body-title"> Solution </h3>
+            </Element>
             <h2 className="fridgeFriend-body-subtitle">
               An innovative solution to create a convenient lifestyle that
               reduces waste and saves money.
             </h2>
-            <p className="fridgeFriend-body-description">
+            <p className="fridgeFriend-body-description paddingTop">
               FridgeFriend is a groundbreaking solution that redefines kitchen
               efficiency. By integrating in-fridge cameras with smart
               technology, it tracks and manages your groceries, alerting you to
@@ -99,11 +162,13 @@ export const FridgeFriend = () => {
             </p>
           </div>
           <div className="fridgeFriend-body">
-            <h3 className="fridgeFriend-body-title"> Process </h3>
+            <Element name="process">
+              <h3 className="fridgeFriend-body-title"> Process </h3>
+            </Element>
             <h2 className="fridgeFriend-body-subtitle">
               How to make New York a more sustainable city?
             </h2>
-            <div className="fridgeFriend-body-description">
+            <div className="fridgeFriend-body-description paddingTop">
               <p>
                 <b> Focus: Food Waste</b>
               </p>
@@ -140,15 +205,14 @@ export const FridgeFriend = () => {
                 ideas to solve the problems.
               </p>
             </div>
+            <Element name="ideation">
+              <h3 className="fridgeFriend-body-title paddingTop">
+                Ideation and Brainstorming
+              </h3>
+            </Element>
 
-            <h3
-              className="fridgeFriend-body-title"
-              style={{ paddingTop: "30px" }}
-            >
-              1st Round of Ideation
-            </h3>
-            <h3>
-              IDEA 1: Smart Fridge App Support and Educate People on Mindful
+            <h3 className="paddingTop">
+              Idea 1: Smart Fridge App Support and Educate People on Mindful
               Shopping and Reducing Waste
             </h3>
             <div className="fridgeFriend-body-description">
@@ -189,6 +253,202 @@ export const FridgeFriend = () => {
                   </p>
                 </li>
               </ol>
+            </div>
+            <h3 className="fridgeFriend-body-title">Challenges</h3>
+            <div className="fridgeFriend-body-description">
+              <ul>
+                <li>
+                  <p>
+                    The initiative might cater to a niche audience, possibly not
+                    reflecting the diverse perspectives of NYC residents.
+                    Additionally, mindful shopping tools may not be perceived as
+                    essential.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Dependence on a mobile app could exclude individuals without
+                    access to smart devices or the internet.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <h3 className="fridgeFriend-body-title">Competitors</h3>
+            <div className="fridgeFriend-body-description">
+              <ul>
+                <li>
+                  <p>
+                    Existing apps like "<u>NoWaste</u>" and "<u>Fridge Pal</u>"
+                    provide similar services, helping users manage food
+                    inventory, suggesting recipes, and reminding them of
+                    expiration dates.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div className="fridgeFriend-image">
+              <img src={lowFi1} alt={"idea 1 figma design"} width={"100%"} />
+            </div>
+            <h3 className={"paddingTop"}>
+              Idea 2: Compost Bin with Garden Facilitate the Redistribution of
+              Surplus Food
+            </h3>
+            <div className="fridgeFriend-body-description">
+              <p>
+                <b> Key Features</b>
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    <b>Straightforward Composting </b>
+                  </p>
+                  <p>
+                    Food scraps go in one location where they don't have to be
+                    removed or dealt with directly for long periods of time.
+                    Consumers won't have to find compost locations or worry
+                    about emptying their bin every week and confusion around
+                    separation is eliminated.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>Mitigates Smell </b>
+                  </p>
+                  <p>
+                    Prevents the compost smell from pervading the home by
+                    processing it internally, without any need to open up the
+                    composter and mix the scraps yourself.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>Low Cost Produce at Home </b>
+                  </p>
+                  <p>
+                    Using the food scraps as compost for a garden allows people
+                    to use their old food to grow new food, saving them more
+                    money in the long run while also helping the environment.
+                    Allows communities to take their waste and turn it into
+                    something needed.
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <h3 className="fridgeFriend-body-title">Challenges</h3>
+            <div className="fridgeFriend-body-description">
+              <ul>
+                <li>
+                  <p>
+                    Overcoming ingrained preferences for aesthetically pleasing
+                    produce requires a significant shift in consumer habits.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Beyond changing perceptions, there may be a need for
+                    additional incentives, such as pricing adjustments, to
+                    encourage the purchase of imperfect produce.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <h3 className="fridgeFriend-body-title">Competitors</h3>
+            <div className="fridgeFriend-body-description">
+              <ul>
+                <li>
+                  <p>
+                    Businesses like "<u>Imperfect Foods</u>" and "
+                    <u>Misfits Market</u>" have already established themselves
+                    in the market, offering discounted imperfect produce
+                    directly to consumers and contributing to waste reduction.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="fridgeFriend-side-by-side-image">
+              <img src={compost1} alt={"idea 2 image"} width={"50%"} />
+              <img src={compost2} alt={"idea 2 image2"} width={"50%"} />
+            </div>
+            <h3 className={"paddingTop"}>
+              Idea 3: Local Farmers and Imperfect Produce Delivery App Normalize
+              Imperfect Produce
+            </h3>
+            <div className="fridgeFriend-body-description">
+              <p>
+                <b> Key Features</b>
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    <b>Real-Time Shopping </b>
+                  </p>
+                  <p>
+                    Farm-to-Table Transparency: Experience complete transparency
+                    in our supply chain. Know exactly where your food comes from
+                    and who the farmers are.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>Supporting Local Farmers </b>
+                  </p>
+                  <p>
+                    By purchasing through our app, you directly support local
+                    farmers, contributing to a more sustainable agricultural
+                    ecosystem.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>Customizable Meal plans </b>
+                  </p>
+                  <p>
+                    Tailor your meal plans with a wide range of "imperfect"
+                    products. Discover new flavors and support local agriculture
+                    with every meal.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b> Nutrition Analysis </b>
+                  </p>
+                  <p>
+                    Subscribers to our meal plans receive personalized
+                    nutritional analysis, taking into account the source and
+                    quality of ingredients from our supply chain
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <h3 className="fridgeFriend-body-title">Challenges</h3>
+            <div className="fridgeFriend-body-description">
+              <ul>
+                <li>
+                  <p>
+                    Potential skepticism regarding the safety and quality of
+                    surplus food could deter participation. Ensuring timely
+                    redistribution of food to prevent spoilage presents
+                    substantial logistical hurdles.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <h3 className="fridgeFriend-body-title">Competitors</h3>
+            <div className="fridgeFriend-body-description">
+              <ul>
+                <li>
+                  <p>
+                    Platforms like "<u>Too Good To Go</u>" and "<u>OLIO</u>" are
+                    prominent players in this space, facilitating the sale of
+                    surplus food at reduced prices and encouraging food sharing
+                    among communities.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div className="fridgeFriend-image">
+              <img src={lowFi2} alt={"idea 3 figma design"} width={"100%"} />
             </div>
           </div>
         </div>
