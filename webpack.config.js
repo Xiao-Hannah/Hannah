@@ -17,19 +17,50 @@ module.exports = {
         use: ["style-loader", "css-loader", "less-loader"],
       },
       {
+<<<<<<< HEAD
         test: /\.(png|svg|jpg|jpeg|gif|pdf)$/,
         type: "asset/resource"
+=======
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "assets/images/[name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "assets/files/[name].[ext]",
+            },
+          },
+        ],
+>>>>>>> 621716a139ea01dfe864756e44338ea955bb3762
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
+        generator : {
+          filename : 'assets/fonts/[name][ext][query]',
+        }
       },
     ],
   },
   resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
   output: {
+<<<<<<< HEAD
     path: path.resolve(__dirname, "./dist"),
     publicPath: "dist/",
+=======
+    path: path.resolve(__dirname, "dist/"),
+    publicPath: "/",
+>>>>>>> 621716a139ea01dfe864756e44338ea955bb3762
     filename: "bundle.js",
   },
   devServer: {
