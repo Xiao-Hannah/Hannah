@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   entry: "./src/index.js",
-  mode: isProd ? "production" : "development",
+  mode: "production",
   module: {
     rules: [
       {
@@ -51,7 +51,7 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx", ".ts", ".tsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: isProd ? "/" : "/dist/",
+    publicPath: "/",
     filename: "bundle.js",
   },
   devServer: {

@@ -14,7 +14,11 @@ node_modules/
 jspm_packages/
 
 # Distribution directories
-dist/
+
+# Ignore everything in the dist/ directory
+dist/*
+# But don't ignore dist/index.html
+!dist/index.html
 
 ### VisualStudioCode ###
 .vscode/*      # Maybe .vscode/**/* instead - see comments
