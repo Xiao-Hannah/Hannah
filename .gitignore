@@ -19,6 +19,7 @@ jspm_packages/
 dist/*
 # But don't ignore dist/index.html
 !dist/index.html
+!dist/404.html
 
 ### VisualStudioCode ###
 .vscode/*      # Maybe .vscode/**/* instead - see comments
